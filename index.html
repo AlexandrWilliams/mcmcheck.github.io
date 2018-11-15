@@ -91,11 +91,22 @@
 		</div>
 
 		<div class="right_block_ft">
-			
-			<form method="post" id="contact-form" class="form-horizontal" action="mail_form.php">
-				Name: <input type="text" name="name" placeholder="Alex">
-				Email: <input type="email" name="email" placeholder="email adress">
-				Question: <input name="message" rows="5">
+		
+<form action="send.php" method=post> 
+
+<p>Вводный текст перед формой <p> 
+              <div align="center"> 
+              Teма<br /> 
+              <input type="text" name="title" size="40"><br /> 
+              Сообщение<br /> 
+              <textarea name="mess" rows="10" cols="40"></textarea> 
+              <br /> 
+              <input type="submit" value="Отправить" name="submit"></div> 
+</form> 
+			<form method="post"  class="form-horizontal" action="mail_form.php">
+				<input type="text" name="name" placeholder="name">
+				<input type="email" name="email" placeholder="email adress">
+				<input name="message" rows="5" placeholder="some question">
 				<input type="submit" value="SEND">
 			</form>
 			<a href="#">
